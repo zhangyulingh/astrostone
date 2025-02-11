@@ -78,8 +78,8 @@ a:focus {
   .hamburger {
     display: none;
   }
-  .stoneImg {
-    width: 100px;
-    height: 200px;
-  }
+}
+.stoneImg {
+  width: 200px;
+  height: 300px;
 }
