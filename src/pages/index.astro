@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Greeting from '../components/Greeting';
 import '../styles/global.css';
 const pageTitle = '首页';
 ---
@@ -7,4 +8,5 @@ const pageTitle = '首页';
 <BaseLayout pageTitle={pageTitle}>
   <img src="/images/stone.jpg" alt="Astro logo" class="stoneImg" />
   <h2>My awesome blog subtitle</h2>
+  <Greeting client:load messages={["Hej", "Hallo", "Hola", "Habari"]} />
 </BaseLayout>
